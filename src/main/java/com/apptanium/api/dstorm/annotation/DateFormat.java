@@ -6,7 +6,8 @@ import java.lang.annotation.*;
  * @author saurabh
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.TYPE})
+@Target({ElementType.FIELD})
 @Inherited
-public @interface Entity {
+public @interface DateFormat {
+  String value();
 }

@@ -6,6 +6,7 @@ import java.lang.annotation.*;
  * @author saurabh
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD})
-public @interface Parent {
+@Target({ElementType.TYPE})
+@Inherited
+public @interface Kind {
 }

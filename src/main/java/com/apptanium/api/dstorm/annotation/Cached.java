@@ -9,5 +9,5 @@ import java.lang.annotation.*;
 @Target({ElementType.TYPE})
 @Inherited
 public @interface Cached {
-  String namespace();
+  String namespace() default "";
 }
